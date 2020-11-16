@@ -1,0 +1,63 @@
+<nav class="navbar navbar-light bg-nav">
+  <div class="container">
+    <button
+      class="navbar-toggler first-button bg-white mr-2"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent20"
+      aria-controls="navbarSupportedContent20"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <div class="animated-icon1"><span></span><span></span><span></span></div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Pricing</a>
+        </li>
+      </ul>
+      <!-- Links -->
+    </div>
+
+    <a href="" class="text-white navbar-brand mr-auto" routerLink="/">Movies</a>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a
+          routerLink="headers1"
+          href="#"
+          class="text-white navbar-brand"
+          role="button"
+          >Search
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="bg-my">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <app-movie-detail></app-movie-detail>
+      </div>
+      <div class="col-md-4">
+        <app-right-carousel></app-right-carousel>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

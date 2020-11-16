@@ -1,0 +1,28 @@
+.bg-right {
+  background-color: red;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.small-container-1 {
+  display: flex;
+}
+
+.two {
+  width: 200px;
+  height: 100px;
+
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.bg-color {
+  background-color: #0a161b;
+  height: 600px;
+}

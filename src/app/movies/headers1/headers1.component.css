@@ -1,0 +1,16 @@
+ul li {
+  display: inline;
+}
+
+.img-size {
+  width: 50px;
+  color: 50px;
+}
+
+.arrayColor {
+  background-color: #0a161b;
+}
+
+.margina-array {
+  margin-top: 10rem;
+}

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row m-2">
+    <div class="col-md-4">
+      <p>THIS IS MY MOVIE COMPONENT</p>
+      <a class="text-primary" style="cursor: pointer;">{{ movie.Title }} </a>
+    </div>
+    <div class="col-md-2">
+      <a>{{movie.Year}}</a>
+    </div>
+    <div class="col-md-2">
+      <a href="">{{movie.ImdbId}}</a>
+    </div>
+    <div class="col-md-2">
+      <a href="">{{movie.Type}}</a>
+    </div>
+    <div class="col-md-2">
+      <a href=""
+        ><img
+          [src]="movie.Poster"
+          alt=""
+          class="img-responsive='300px'"
+          style="height: 100px; width: 100px;"
+        />
+      </a>
+    </div>
+  </div>
+</div>

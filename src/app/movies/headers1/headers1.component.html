@@ -1,0 +1,56 @@
+<div class="container">
+  <a class="text-white" href="#">Movies</a>
+  <form class="form-group my-2 my-lg-0">
+    <input
+      class="form-control mr-sm-2"
+      type="search"
+      placeholder="Search By Title"
+      aria-label="Search"
+      #movieNameInput
+    />
+    <button
+      routerLink="headers1/:id"
+      class="btn btn-secondary my-sm-1 float-right"
+      type="button"
+      (click)="onClick()"
+    >
+      Search
+    </button>
+  </form>
+  <div class="list-group margina-array">
+    <a
+      href="#"
+      class="list-group-item text-white"
+      *ngFor=" let movie of movies"
+      [routerLink]="['/headers1', movie.imdbID]"
+      style="background-color: transparent;"
+    >
+      <div class="row">
+        <div class="col-md-3">
+          <img [src]="movie.Poster" alt="" class="img-size" />
+        </div>
+        <div class="col-md-3 my-auto">
+          <a> {{movie.Title}}</a>
+        </div>
+        <div class="col-md-3 my-auto">
+          <a> {{movie.Year}}</a>
+        </div>
+        <div class="col-md-3 my-auto">
+          <a> {{movie.Type}}</a>
+        </div>
+      </div>
+    </a>
+    <!-- <ul class="list-group">
+        <li class="list-group-item">{{movie.Title}}</li>
+        <li class="list-group-item">{{movie.Type}}</li>
+        <li class="list-group-item">{{movie.Year}}</li>
+        <li class="list-group-item"><img [src]="movie.Poster" alt="" /></li>
+      </ul>
+    </a> -->
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
